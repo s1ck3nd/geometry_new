@@ -1,4 +1,4 @@
-include "foo.h"
+#include "foo.h"
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -17,7 +17,6 @@ int main()
     p = PerimetrC(r2, PI);
     s = SquareC(r2, PI);
     printf("Perimetr = %f Square = %f\n", p, s);
-    Cross(x1, y1, r1, x2, y2, r2);
     printf("Enter sides of triangle(a,b,c):");
     scanf("%d %d %d", &a, &b, &c);
     p = PerimetrT(a, b, c);
