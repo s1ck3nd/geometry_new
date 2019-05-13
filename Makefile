@@ -4,8 +4,7 @@ CFLAGS=-Wall -Werror
 SD=src/
 OD=build/
 EXECUTABLE=bin/geometry.exe
-all: $(EXECUTABLE)
-	
+all: $(EXECUTABLE)	
 $(EXECUTABLE): $(OD)main.o $(OD)perimetr.o $(OD)square.o 
 	$(CC) $(CFLAGS) -o $(EXECUTABLE) $(OD)main.o $(OD)perimetr.o $(OD)square.o -lm
 $(OD)main.o: $(SD)main.cpp
