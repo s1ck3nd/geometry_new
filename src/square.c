@@ -1,4 +1,4 @@
-include "foo.h"
+#include "foo.h"
 #include <math.h>
 
 float SquareC(int r, float PI)
